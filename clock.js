@@ -9,8 +9,20 @@ function updateTime() {
     document.getElementById('time').innerText = timeString;
 }
 
-// 매 초마다 updateTime 함수를 호출하여 시간을 업데이트합니다.
-setInterval(updateTime, 1000);
+function updateBatteryStatus() {
+    const batteryStatusElement = document.getElementById('battery-status');
+    const clockElement = document.querySelector('.clock');
 
-// 페이지가 로드될 때 한 번 호출하여 초기 시간을 설정합니다.
+    let currentBattery = parseInt(batteryStatusElement.innerText, 10);
+    if (currentBattery > 0) {
+        currentBattery -= 1;
+        batteryStatusElement.innerText = `${currentBattery}%`;
+    } else {
+        clockElement.classList.add('low-battery');
+    }
+}
+
+setInterval(updateTime, 1000);
+setInterval(updateBatteryStatus, 1000);
+
 updateTime();

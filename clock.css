@@ -10,11 +10,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
 .battery{
     margin-top: 73px;
     margin-left: 1134px;
+}
+
+.low-battery #time{
+    background-color: black;
+    background-image: url('low-battery.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
 }
 
 #time {
@@ -25,6 +34,8 @@
     align-items: center;
     justify-content: center;
     border: 2px solid black; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
 }
 
 .alarm{

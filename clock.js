@@ -30,7 +30,7 @@ function addAlarm() {
 
     // 입력값이 하나라도 비어있으면 콘솔에 출력하고 추가를 중단
     if (!hourInput.value || !minInput.value || !secInput.value) {
-        console.log('시, 분, 초를 모두 입력하세요.');
+        alert('시, 분, 초를 모두 입력하세요.');
         return;
     }
 
@@ -40,13 +40,13 @@ function addAlarm() {
     var sec = parseInt(secInput.value, 10);
 
     if (isNaN(hour) || isNaN(min) || isNaN(sec) || hour < 0 || hour > 23 || min < 0 || min > 59 || sec < 0 || sec > 59) {
-        console.log('시, 분, 초는 각각 0-23, 0-59, 0-59 사이의 값이어야 합니다.');
+        alert('시, 분, 초는 각각 0-23, 0-59, 0-59 사이의 값이어야 합니다.');
         return;
     }
 
     // 알람이 3개 이상이면 콘솔에 출력하고 추가를 막음
     if (alarmRecords.children.length >= 3) {
-        console.log('알람은 최대 3개까지 추가할 수 있습니다.');
+        alert('알람은 최대 3개까지 추가할 수 있습니다.');
         return;
     }
 

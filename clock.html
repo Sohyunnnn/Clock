@@ -7,22 +7,24 @@
     <link rel="stylesheet" href="clock.css">
 </head>
 <body>
-        <div class="clock">
-            <div class="battery">배터리: <span id="battery-status">100%</span></div>
-            <div id="time"></div>
-            <div class="alarm">
-                <div class="alarm-items">알람기록</div>
-                <div class="alarm-setting">
-                    <div class="time-setting">
-                        <div class="hour">시</div>
-                        <div class="min">분</div>
-                        <div class="sec">초</div>
-                    </div>
-                     <div class="edit">
-                        <div class="add">추가</div>
-                        <div class="del">삭제</div>
-                    </div>
+    <div class="clock">
+        <div class="battery">배터리: <span id="battery-status">100%</span></div>
+        <div id="time"></div>
+        <div class="alarm">
+            <div class="alarm-items" id="alarmRecords"></div>
+            <div class="alarm-setting">
+                <div class="time-setting">
+                    <input class="hour" placeholder="hh" />
+                    <input class="min" placeholder="mm" />
+                    <input class="sec" placeholder="ss" />
                 </div>
+                <div class="edit">
+                    <button class="add" onclick="addAlarm()">추가</button>
+                    <button class="del" onclick="clearAlarms()">전체 삭제</button>
+                </div>
+            </div>
+        </div>
+    </div>
                 
                 
                 

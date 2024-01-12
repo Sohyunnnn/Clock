@@ -1,0 +1,77 @@
+ body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+.clock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.battery{
+    margin-top: 73px;
+    margin-left: 1134px;
+}
+
+#time {
+    font-size: 4em;
+    width: 869px;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black; 
+}
+
+.alarm{
+    display: flex;
+    flex-direction: row;
+    width: 854px;
+    height: 229px;
+    border: 1.5px solid red; 
+    margin-top: 25px;
+}
+
+.alarm-items{
+    margin: 17px 33px 0 19px;
+    width: 327px;
+    height: 188px;
+    border: 1.5px solid blue; 
+}
+
+.alarm-setting{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.time-setting{
+    display: flex;
+    flex-direction: row;
+}
+
+.hour, .min, .sec {
+    width: 131px;
+    height: 49px;
+    border: 1.5px solid black; 
+    margin-right: 19px;
+}
+
+.edit{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.add, .del{
+    width: 91px;
+    height: 43px;
+    margin-top: 19px;
+    margin-right: 73px;
+    border: 1.5px solid black; 
+}
